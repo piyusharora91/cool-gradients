@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, rgb(111, 42, 42), rgb(144, 141, 165));
+    background: linear-gradient(to right, #6F2A2A, #908DA5);
     display: flexbox;
 }
 
