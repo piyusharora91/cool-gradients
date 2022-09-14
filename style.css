@@ -1,35 +1,92 @@
+html {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #475E40, #ABB18C);
-    display: flexbox;
-}
-
-.header {
-    height: 7em;
-}
-
-.header h1 {
-    font-size: 4em;
-    text-align: center;
     padding: 0;
     font-family: fantasy;
 }
 
+#gradient {
+    background: linear-gradient(to right, #475E40, #ABB18C);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.header {
+    height: max-content;
+}
+
+.header h1 {
+    font-size: 3em;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    word-wrap: break-word;
+}
+
 .inputs {
-    height: 9em;
+    height: max-content;
     text-align: center;
 }
 
 .inputs input {
-    margin: 6em 3em 0em 3em;
     width: 5em;
     height: 2.4em;
+}
+
+.inputs,
+.values-container {
+    position: relative;
+    top: -20px;
+}
+
+.values-container {
+    top: -70px;
 }
 
 .values-container h2,
 h3 {
     text-align: center;
-    font-size: 1.8em;
     font-family: Monaco;
+}
+
+.values-container h2 {
+    font-size: 2.2em;
+}
+
+.values-container h3 {
+    font-size: 1.4em;
+    margin: auto;
+}
+
+@media screen and (min-width: 500px) and (min-height: 599px) {
+    #gradient {
+        justify-content: flex-start;
+    }
+
+    .header h1 {
+        font-size: 3.5em;
+        padding-top: 50px;
+    }
+
+    .inputs,
+    .values-container {
+        margin-top: 70px;
+    }
+
+    .values-container h3 {
+        font-size: 1.4em;
+        width: 85vw;
+    }
+
+    .inputs,
+    .values-container {
+        position: initial;
+    }
 }
