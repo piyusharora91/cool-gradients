@@ -9,7 +9,7 @@ body {
 }
 
 #gradient {
-    background: linear-gradient(to right, #475E40, #ABB18C);
+    background: linear-gradient(to right, rgb(74, 189, 227), rgb(46, 214, 74));
     display: flex;
     flex-direction: column;
     justify-content: space-around;
