@@ -3,7 +3,8 @@
 
 Choose YOUR favorite *Linear Gradient* for your next project with this gradient generator.
 
-Updated with **TypeScript**
+Updated with **\*TypeScript**
+
 Tech Stack Used: **HTML**, **CSS**, **JavaScript**
 
 **PROJECT LINK:** [CLICK HERE](https://custom-cool-gradients-101.netlify.app/)
