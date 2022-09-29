@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 html {
     box-sizing: border-box;
 }
@@ -5,14 +7,15 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: fantasy;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
-#gradient {
+#gradient-container {
     background: linear-gradient(to right, rgb(74, 189, 227), rgb(46, 214, 74));
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     min-height: 100vh;
     min-width: 100vw;
@@ -20,11 +23,11 @@ body {
 
 .header {
     height: max-content;
+    margin-top: 30px;
 }
 
 .header h1 {
-    font-size: 3em;
-    text-align: center;
+    font-size: 2.5em;
     padding: 0;
     margin: 0;
     word-wrap: break-word;
@@ -42,22 +45,20 @@ body {
 
 .inputs,
 .values-container {
-    position: relative;
-    top: -20px;
+    margin-top: 50px;
 }
 
-.values-container {
-    top: -70px;
+.inputs {
+    margin-top: 110px;
 }
 
 .values-container h2,
 h3 {
     text-align: center;
-    font-family: Monaco;
 }
 
 .values-container h2 {
-    font-size: 2.2em;
+    font-size: 1.7em;
 }
 
 .values-container h3 {
@@ -75,18 +76,27 @@ h3 {
         padding-top: 50px;
     }
 
-    .inputs,
+    .inputs {
+        margin-top: 140px;
+    }
+
+    .inputs input {
+        width: 6em;
+        height: 3em;
+    }
+
     .values-container {
-        margin-top: 70px;
+        margin-top: 90px;
+    }
+
+    .values-container h2 {
+        font-size: 2.5em;
+        margin: auto;
     }
 
     .values-container h3 {
-        font-size: 1.6em;
+        font-size: 2em;
         width: 85vw;
-    }
-
-    .inputs,
-    .values-container {
-        position: initial;
+        margin-top: 15px;
     }
 }

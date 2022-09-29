@@ -1,14 +1,12 @@
-const color1 = document.querySelector("#Color1");
-const color2 = document.querySelector("#Color2");
-const body = document.querySelector("#gradient");
-const display = document.querySelector("h3");
-
-const changeColor = () => {
-    body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
-    display.textContent = body.style.background + ";";
+var appContainer = document.getElementById('gradient-container');
+var gradientValueDisplay = document.getElementById('value-display');
+var color1 = document.getElementById('Color1');
+var color2 = document.getElementById('Color2');
+function changeColorInput(event) {
+    if (event.target) {
+        appContainer.style.background = "linear-gradient(to right, ".concat(color1.value, ", ").concat(color2.value, ")");
+        gradientValueDisplay.textContent = appContainer.style.background;
+    }
 }
-
-console.log(body.style.background);
-
-color1.addEventListener("input", changeColor);
-color2.addEventListener("input", changeColor);
+color1.addEventListener('input', changeColorInput);
+color2.addEventListener('input', changeColorInput);
