@@ -33,6 +33,27 @@ body {
     word-wrap: break-word;
 }
 
+.reset-color-values {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: whitesmoke;
+    height: max-content;
+}
+
+.reset-color-values:hover {
+    filter: brightness(95%);
+}
+
+.reset-color-values:active {
+    scale: 0.99;
+}
+
 .inputs {
     height: max-content;
     text-align: center;
@@ -66,7 +87,7 @@ h3 {
     margin: auto;
 }
 
-@media screen and (min-width: 500px) and (min-height: 599px) {
+@media screen and (min-width: 800px) and (min-height: 599px) {
     #gradient {
         justify-content: flex-start;
     }
@@ -74,6 +95,11 @@ h3 {
     .header h1 {
         font-size: 3.5em;
         padding-top: 50px;
+    }
+
+    .reset-color-values {
+        top: 20px;
+        height: max-content;
     }
 
     .inputs {
