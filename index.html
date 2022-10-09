@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>Background Generator</title>
+    <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -17,15 +18,14 @@
             <button id="reset-color-values" class="reset-color-values">Reset Values</button>
         </div>
         <div class="inputs">
-            <input type="color" class="color-input" id="Color1" name="Color1" value="#4abde3">
-            <input type="color" class="color-input" id="Color2" name="Color2" value="#2ed64a">
+            <input type="color" class="color-input" id="color1" name="Color1" value="#4abde3">
+            <input type="color" class="color-input" id="color2" name="Color2" value="#2ed64a">
         </div>
         <div class="values-container">
             <h2>Current CSS Background</h2>
             <h3 id="value-display">linear-gradient(to right, rgb(74, 189, 227), rgb(46, 214, 74));</h3>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 
 </html>

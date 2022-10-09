@@ -1,9 +1,8 @@
 var appContainer = document.getElementById('gradient-container');
 var gradientValueDisplay = document.getElementById('value-display');
-var color1 = document.getElementById('Color1');
-var color2 = document.getElementById('Color2');
+var color1 = document.getElementById('color1');
+var color2 = document.getElementById('color2');
 var resetValuesButton = document.getElementById('reset-color-values');
-var savedToStore = false;
 var loadSavedValues = function () {
     var savedColor1Value = localStorage.getItem('color1');
     var savedColor2Value = localStorage.getItem('color2');
@@ -11,30 +10,25 @@ var loadSavedValues = function () {
     color2.value = savedColor2Value;
     changeGradientAndHeading();
 };
-var storeColorValues = function () {
-    // Store the color values in the local storage
-    localStorage.setItem("color1", color1.value);
-    localStorage.setItem("color2", color2.value);
-    savedToStore = true;
-    localStorage.setItem('inputSaved', JSON.stringify(savedToStore));
-};
 var changeGradientAndHeading = function () {
     appContainer.style.background = "linear-gradient(to right, ".concat(color1.value, ", ").concat(color2.value, ")");
     gradientValueDisplay.textContent = appContainer.style.background;
 };
-function changeColorInput() {
+var changeColorInput = function () {
     changeGradientAndHeading();
-    storeColorValues();
-}
+    // Store the color values in the local storage
+    localStorage.setItem("color1", color1.value);
+    localStorage.setItem("color2", color2.value);
+};
 var eraseColorValues = function () {
-    localStorage.setItem("color1", '');
-    localStorage.setItem("color2", '');
-    savedToStore = false;
-    localStorage.setItem('inputSaved', JSON.stringify(savedToStore));
-    location.reload();
+    localStorage.removeItem("color1");
+    localStorage.removeItem("color2");
+    color1.value = '#4abde3';
+    color2.value = '#2ed64a';
+    changeGradientAndHeading();
 };
 //set the color if values are present in local storage
-if (localStorage.getItem('inputSaved') === 'true') {
+if (localStorage.getItem('color1') && localStorage.getItem('color2')) {
     loadSavedValues();
 }
 color1.addEventListener('input', changeColorInput);
