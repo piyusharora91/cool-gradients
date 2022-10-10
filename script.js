@@ -4,11 +4,15 @@ var color1 = document.getElementById('color1');
 var color2 = document.getElementById('color2');
 var resetValuesButton = document.getElementById('reset-color-values');
 var loadSavedValues = function () {
+    // let savedColor1Value = localStorage.getItem('color1') as string;
+    // let savedColor2Value = localStorage.getItem('color2') as string;
     var savedColor1Value = localStorage.getItem('color1');
     var savedColor2Value = localStorage.getItem('color2');
-    color1.value = savedColor1Value;
-    color2.value = savedColor2Value;
-    changeGradientAndHeading();
+    if (typeof savedColor1Value === 'string' && typeof savedColor2Value === 'string') {
+        color1.value = savedColor1Value;
+        color2.value = savedColor2Value;
+        changeGradientAndHeading();
+    }
 };
 var changeGradientAndHeading = function () {
     appContainer.style.background = "linear-gradient(to right, ".concat(color1.value, ", ").concat(color2.value, ")");

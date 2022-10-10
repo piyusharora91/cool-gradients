@@ -5,11 +5,15 @@ const color2 = document.getElementById('color2') as HTMLInputElement;
 const resetValuesButton = document.getElementById('reset-color-values') as HTMLButtonElement;
 
 const loadSavedValues = () => {
-    let savedColor1Value = localStorage.getItem('color1')!;
-    let savedColor2Value = localStorage.getItem('color2')!;
-    color1.value = savedColor1Value;
-    color2.value = savedColor2Value;
-    changeGradientAndHeading();
+    // let savedColor1Value = localStorage.getItem('color1') as string;
+    // let savedColor2Value = localStorage.getItem('color2') as string;
+    let savedColor1Value = localStorage.getItem('color1');
+    let savedColor2Value = localStorage.getItem('color2');
+    if (typeof savedColor1Value === 'string' && typeof savedColor2Value === 'string') {
+        color1.value = savedColor1Value;
+        color2.value = savedColor2Value;
+        changeGradientAndHeading();
+    }
 }
 
 const changeGradientAndHeading = () => {
