@@ -1,15 +1,16 @@
-# Custom Gradient Generator
+<h1 align="center">Custom Gradient Generator</h1>
 
-
-Choose YOUR favorite *Linear Gradient* for your next project with this gradient generator. <br />
+<p align="center">
+Choose YOUR favorite <strong><em>Linear Gradient</em></strong> for your next project with this gradient generator. <br />
 Your Inputs are saved automatically as you change any of the colors. <br />
 That is when revisited, the gradient with those specific colors will be displayed.  <br />
 And colors can be reset anytime to the default ones at a click of a button.
+</p>
 
-Updated with **\*TypeScript**
+<p align="center">
+Tech Stack Used: <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> & Updated with <strong>*TypeScript*</strong>.
+</p>
 
-Tech Stack Used: **HTML**, **CSS**, **JavaScript**
-
-**PROJECT LINK:** [CLICK HERE](https://custom-cool-gradients-101.netlify.app/)
-
-<img width="500" height="400" alt="Screenshot 2022-09-30 at 16 14 17" src="https://user-images.githubusercontent.com/41067454/193253598-7420a170-0b18-474a-b8a3-1a2ce4a77e60.png">
+<p align="center">
+<img width="843" alt="Screenshot 2023-03-05 at 13 01 48" src="https://user-images.githubusercontent.com/41067454/222947932-35254bf1-736f-4e41-aa6d-85106817f239.png">
+</p>
