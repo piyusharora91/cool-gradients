@@ -1,128 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 #gradient-container {
-    background: linear-gradient(to right, rgb(74, 189, 227), rgb(46, 214, 74));
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 100vh;
-    min-width: 100vw;
+  background: linear-gradient(to right, rgb(74, 189, 227), rgb(214, 135, 101));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 .header {
-    height: max-content;
-    margin-top: 30px;
+  height: max-content;
+  margin-top: 30px;
 }
 
 .header h1 {
-    font-size: 2.5em;
-    padding: 0;
-    margin: 0;
-    word-wrap: break-word;
+  font-size: 2.5em;
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word;
 }
 
 .reset-color-values {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    font-size: 25px;
-    border-radius: 10px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: whitesmoke;
-    height: max-content;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 25px;
+  border-radius: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: whitesmoke;
+  height: max-content;
 }
 
 .reset-color-values:hover {
-    filter: brightness(95%);
+  filter: brightness(95%);
 }
 
 .reset-color-values:active {
-    scale: 0.99;
+  scale: 0.99;
 }
 
 .inputs {
-    height: max-content;
-    text-align: center;
+  height: max-content;
+  text-align: center;
 }
 
 .inputs input {
-    width: 5em;
-    height: 2.4em;
+  width: 5em;
+  height: 2.4em;
 }
 
 .inputs,
 .values-container {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .inputs {
-    margin-top: 110px;
+  margin-top: 110px;
 }
 
 .values-container h2,
 h3 {
-    text-align: center;
+  text-align: center;
 }
 
 .values-container h2 {
-    font-size: 1.7em;
+  font-size: 1.7em;
 }
 
 .values-container h3 {
-    font-size: 1.4em;
-    margin: auto;
+  font-size: 1.4em;
+  margin: auto;
 }
 
 @media screen and (min-width: 800px) and (min-height: 599px) {
-    #gradient {
-        justify-content: flex-start;
-    }
+  #gradient {
+    justify-content: flex-start;
+  }
 
-    .header h1 {
-        font-size: 3.5em;
-        padding-top: 50px;
-    }
+  .header h1 {
+    font-size: 3.5em;
+    padding-top: 50px;
+  }
 
-    .reset-color-values {
-        top: 20px;
-        height: max-content;
-    }
+  .reset-color-values {
+    top: 20px;
+    height: max-content;
+  }
 
-    .inputs {
-        margin-top: 140px;
-    }
+  .inputs {
+    margin-top: 140px;
+  }
 
-    .inputs input {
-        width: 6em;
-        height: 3em;
-    }
+  .inputs input {
+    width: 6em;
+    height: 3em;
+  }
 
-    .values-container {
-        margin-top: 90px;
-    }
+  .values-container {
+    margin-top: 90px;
+  }
 
-    .values-container h2 {
-        font-size: 2.5em;
-        margin: auto;
-    }
+  .values-container h2 {
+    font-size: 2.5em;
+    margin: auto;
+  }
 
-    .values-container h3 {
-        font-size: 2em;
-        width: 85vw;
-        margin-top: 15px;
-    }
+  .values-container h3 {
+    font-size: 2em;
+    width: 85vw;
+    margin-top: 15px;
+  }
 }
